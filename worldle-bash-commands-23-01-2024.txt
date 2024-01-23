@@ -1,0 +1,22 @@
+first word used = salet
+christo@christos-MacBook-Air wordle-stuff % cat dict_5_letter_words.txt | grep -e 's.[^l].[^t]' | grep -v a | grep -v e | grep l | grep t > outp.txt 
+christo@christos-MacBook-Air wordle-stuff % cat outp.txt 
+still
+stool
+slits
+slots
+sloth
+sluts
+styli
+christo@christos-MacBook-Air wordle-stuff % ./getWordsNotPreviouslyUsedInWordle.sh outp.txt previousWorldleWordsPerLine.txt
+still
+slits
+slots
+sluts
+styli
+answer = still (which entered as second guess on second row)
+
+Wordle 948 2/6
+
+🟩⬜🟨⬜🟨
+🟩🟩🟩🟩🟩
