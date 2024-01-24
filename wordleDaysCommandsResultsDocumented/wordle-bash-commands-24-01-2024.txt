@@ -1,0 +1,48 @@
+christo@christos-MacBook-Air wordle-stuff % cat dict_5_letter_words.txt | grep -e '..l[^e].' | grep -v s | grep -v a | grep -v t | grep e > output.txt
+christo@christos-MacBook-Air wordle-stuff % cat output.txt 
+below
+hello
+jelly < 2nd guess i went with
+belly
+cello
+bulge
+melon
+relic
+belch
+delve
+belle
+welch
+jello
+bilge
+felon
+helix
+belie
+kelly
+belli
+dolce
+rille
+ville
+kelpy
+christo@christos-MacBook-Air wordle-stuff % cat output.txt | grep -e '[^l]el[^l][^l]' | grep -v j | grep -v y > output.txt 
+christo@christos-MacBook-Air wordle-stuff % cat output.txt 
+below
+melon
+relic
+belch
+delve
+welch
+felon
+helix
+belie
+christo@christos-MacBook-Air wordle-stuff % ./getWordsNotPreviouslyUsedInWordle.sh output.txt previousWorldleWordsPerLine.txt
+melon < 3rd guess i went with
+relic < 4th guess i went with
+welch
+felon
+
+Wordle 949 4/6
+
+⬜⬜🟩🟨⬜
+⬜🟩🟩⬜⬜
+⬜🟩🟩⬜⬜
+🟩🟩🟩🟩🟩
