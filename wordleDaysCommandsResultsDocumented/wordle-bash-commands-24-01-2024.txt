@@ -1,3 +1,5 @@
+starting word = salet
+
 christo@christos-MacBook-Air wordle-stuff % cat dict_5_letter_words.txt | grep -e '..l[^e].' | grep -v s | grep -v a | grep -v t | grep e > output.txt
 christo@christos-MacBook-Air wordle-stuff % cat output.txt 
 below
